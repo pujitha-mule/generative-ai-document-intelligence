@@ -1,4 +1,4 @@
-# 🤖 Generative AI Document Intelligence System
+# Generative AI Document Intelligence System
 
 An AI-powered document intelligence application built with **Python, FastAPI, OpenAI API, Pydantic, and Docker** that extracts structured information from unstructured PDF documents and returns validated JSON responses through REST APIs.
 
@@ -6,7 +6,7 @@ The system demonstrates how **Large Language Models (LLMs)** can be integrated w
 
 ---
 
-## 🚀 Overview
+## Overview
 
 Organizations frequently process documents such as invoices, receipts, reports, and business records that contain important information in unstructured formats.
 
@@ -22,22 +22,22 @@ This project provides an automated document-processing pipeline that:
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- 📄 PDF document upload through REST API
-- 🔍 Automatic text extraction using **PyPDF**
-- 🧠 LLM-powered document understanding
-- 🎯 Prompt-based structured information extraction
-- 📦 Structured JSON response generation
-- ✅ Schema validation using **Pydantic**
-- ⚡ High-performance REST APIs using **FastAPI**
-- 🐳 Dockerized application for reproducible execution
-- 📚 Interactive API documentation using **Swagger/OpenAPI**
-- 🔐 Environment-based API key configuration
+- PDF document upload through REST API
+- Automatic text extraction using **PyPDF**
+- LLM-powered document understanding
+- Prompt-based structured information extraction
+- Structured JSON response generation
+- Schema validation using **Pydantic**
+- REST APIs using **FastAPI**
+- Dockerized application for reproducible execution
+- Interactive API documentation using **Swagger/OpenAPI**
+- Environment-based API key configuration
 
 ---
 
-## 🧠 Extracted Information
+## Extracted Information
 
 The application currently extracts five structured fields:
 
@@ -63,7 +63,7 @@ Example response:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```text
                      ┌─────────────────┐
@@ -128,7 +128,7 @@ REST API Response
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -143,7 +143,7 @@ REST API Response
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 generative-ai-document-intelligence/
@@ -161,7 +161,7 @@ generative-ai-document-intelligence/
 
 ---
 
-## ⚙️ Installation & Local Setup
+## Installation and Local Setup
 
 ### 1. Clone the repository
 
@@ -194,11 +194,11 @@ pip install -r requirements.txt
 
 ---
 
-## 🔑 Environment Configuration
+## Environment Configuration
 
 Create a `.env` file in the project root.
 
-You can copy the provided example:
+Copy the provided example:
 
 ```bash
 cp .env.example .env
@@ -214,7 +214,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 ---
 
-## ▶️ Running the Application
+## Running the Application
 
 Start the FastAPI development server:
 
@@ -226,7 +226,7 @@ The application will run locally on port `8000`.
 
 ---
 
-## 📚 API Documentation
+## API Documentation
 
 FastAPI automatically generates interactive API documentation.
 
@@ -240,7 +240,7 @@ You can upload PDFs and test the extraction API directly through the Swagger int
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Health Check
 
@@ -264,7 +264,7 @@ POST /extract
 
 Upload a PDF using `multipart/form-data`.
 
-The API processes the document and returns structured information such as:
+Example response:
 
 ```json
 {
@@ -278,7 +278,7 @@ The API processes the document and returns structured information such as:
 
 ---
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ### Build the Docker image
 
@@ -296,9 +296,9 @@ The API will then be accessible on port `8000`.
 
 ---
 
-## 🧪 Testing the API
+## Testing the API
 
-You can test the application through:
+The application can be tested using:
 
 - Swagger UI
 - Postman
@@ -315,18 +315,18 @@ curl -X POST \
 
 ---
 
-## ⚠️ Current Limitations
+## Current Limitations
 
 The current implementation works with **machine-readable PDF documents**.
 
 Image-only or scanned PDFs require an additional **OCR pipeline** before the extracted content can be processed by the LLM.
 
-Other areas that can be improved include:
+Current areas for improvement include:
 
 - Support for additional document formats
 - OCR integration for scanned documents
 - Batch document processing
-- More advanced document classification
+- Advanced document classification
 - LLM response evaluation
 - Persistent document storage
 - Authentication and authorization
@@ -334,38 +334,38 @@ Other areas that can be improved include:
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 Planned extensions include:
 
-- 🔍 OCR support for scanned PDFs
-- 📚 Multi-document processing
-- 🧠 RAG-based document question answering
-- 📊 Automated extraction evaluation pipeline
-- ☁️ AWS deployment
-- 💾 Database integration for extracted results
-- 🔐 JWT-based API authentication
-- 📈 Processing and API monitoring
+- OCR support for scanned PDFs
+- Multi-document processing
+- RAG-based document question answering
+- Automated extraction evaluation pipeline
+- AWS deployment
+- Database integration for extracted results
+- JWT-based API authentication
+- API monitoring and observability
 
 ---
 
-## 💡 What This Project Demonstrates
+## What This Project Demonstrates
 
 This project demonstrates practical experience with:
 
 - Building **LLM-powered applications**
 - Integrating **LLM APIs with Python**
-- Prompt engineering for structured extraction
+- Prompt engineering for structured information extraction
 - Processing unstructured documents
-- Building production-style REST APIs with **FastAPI**
-- JSON schema validation with **Pydantic**
+- Building REST APIs with **FastAPI**
+- JSON schema validation using **Pydantic**
 - API testing and documentation
 - Environment-based secret management
 - Containerizing AI applications using **Docker**
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Pujitha Mule**
 
@@ -374,9 +374,3 @@ AI/ML Engineer | Python | Generative AI | LLMs | RAG
 GitHub: github.com/pujitha-mule
 
 LinkedIn: linkedin.com/in/pujitha-mule
-
----
-
-## ⭐ Support
-
-If you find this project useful, consider giving the repository a ⭐.
